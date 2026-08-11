@@ -1,0 +1,10 @@
+# VM images and installers - too large for git, redownload from official sources instead
+*.iso
+*.utm/
+*.qcow2
+*.vmdk
+*.vdi
+SHA256SUMS*
+
+# OS junk
+.DS_Store
