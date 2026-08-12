@@ -15,3 +15,4 @@ Every time you sit down to practice, copy `notes/template.md` into `notes/`, ren
 ## Log
 
 - [2026-08-11 — Lab setup](notes/2026-08-11-lab-setup.md)
+- [2026-08-12 — Installing Kali in UTM: fighting a black screen](notes/2026-08-12-kali-install-black-screen.md)
