@@ -35,3 +35,15 @@ Every install attempt went to a black screen after picking an option off GRUB:
 
 - Finish the base install and first boot
 - Try `utmctl attach` again after a UTM update, to see if it's been implemented
+
+## Update: it worked
+
+Software install (Xfce + full tool collection) finished fine. Hit one more "gotcha" after that: rebooting after install looked like it was looping back to the GRUB installer menu — actually just the VM booting from the still-attached ISO again instead of the new disk. Fix: eject the CD/DVD image in UTM settings so it boots from the virtual disk instead.
+
+After that: straight to the Kali login screen, logged in, full Xfce desktop with the whole toolset (organized by attack phase — recon, initial access, privilege escalation, etc., which lines up with how PenTest+ frames methodology). Confirmed internet access from inside the VM with `ping -c 3 google.com` — 0% packet loss.
+
+**Lab is functional as of tonight:**
+- UTM + Kali Linux (ARM64), networked, full toolset installed
+- Signed up for TryHackMe and HackTheBox accounts
+
+**Next session:** download a room's OpenVPN config from TryHackMe/HTB, connect from inside Kali (`sudo openvpn <config>.ovpn`), and try the first target.
